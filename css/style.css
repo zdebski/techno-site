@@ -1,9 +1,9 @@
  body {
-  background-image: url(/img/ooo.jpg);
-        background-size: cover;
-   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
-        height: 100vh;
+     background: url(../img/ooo.jpg);
+     background-size: cover;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: bold;
+     height: 100vh;
 }
 
 .container {
