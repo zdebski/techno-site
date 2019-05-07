@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(){
-    
-    
+//js for menu
 
-
+document.addEventListener("DOMContentLoaded", function(){   
+    
 var navButton = document.querySelector(".navigation-button");
 var navMenu = document.querySelector(".navigation-menu");
 var win = window;

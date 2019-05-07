@@ -1,27 +1,4 @@
- body {
-     background: url(../img/ooo.jpg);
-     background-size: cover;
-     font-family: 'Roboto Condensed', sans-serif;
-     font-weight: bold;
-     height: 100vh;
-}
 
-.container {
-  width: 80%;
-  height: 40px;
-  position: relative;
-  top: 40px;
-  margin: 0 auto;
-}
-
-#logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
- 
- 
-}
 .navigation-wrapper {
   position: relative;
 }
@@ -130,60 +107,3 @@
 .navigation-menu.active li:nth-child(6) {
   transition-delay: .8s;
 }
-        .heading h1{
-             
-            margin-top: 178px;
-            text-transform: uppercase;
-            font-family: impact;
-            font-size: 26px;
-            letter-spacing: 4px;
-            color: white;
-            
-             
-        } 
-        
-        span{
-            font-size: 65px;
-            letter-spacing: 2px;
-            font-family: impact;
-        }
-        
-        .button {
-            
-             
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: normal;
-            font-size: 12px;
-            margin-top: 40px;
-            
-             
-        }
-        .btn1:hover{
-            text-decoration: none;
-            color: white;
-        }
-        .btn2:hover{
-            text-decoration: none;
-            color: black;
-        }
-        
-        
-        
-        .btn1{
-            padding: 12px 25px;
-            background: #f20c4a;
-            text-decoration: none;
-            color: white;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-             
-        }
-        .btn2{
-            padding: 12px 25px;
-            background: #f4f6f8;
-            text-decoration: none;
-            color: #000;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-             
-        }

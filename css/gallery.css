@@ -1,0 +1,63 @@
+ body {
+     background: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.92), 
+        rgba(114, 114, 114, 0.46)),
+         
+      url(../img/gallery-main.jpg);
+     background-size: cover;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: bold;
+     height: 100vh;
+}
+
+div.heading {
+    
+    position: absolute;
+    top: 12vh;
+    left: 15vw;
+}
+
+.heading h3{
+    font-size: 5vh;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: impact;
+    letter-spacing: 4px;
+}
+
+.heading h3::before, h3::after{
+    content: 'Gallery';
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.heading h3::before{
+    
+    -webkit-clip-path: polygon(55% 0, 0 0, 0 100%, 35% 100%);
+    clip-path: polygon(55% 0, 0 0, 0 100%, 35% 100%);
+}
+
+.heading h3::after{
+    
+    -webkit-clip-path: polygon(55% 0, 100% 0, 0 100%, 35% 100%);
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 35% 100%);
+}
+
+.heading h3:hover::before{
+    top: -5px;
+    left: -10px;
+    transform: rotate(-10deg);
+    color: #f20c4a;
+}
+
+.heading h3:hover::after{
+    top: 5px;
+    left: 10px;
+    transform: rotate(10deg);
+    color: #f20c4a;
+}
