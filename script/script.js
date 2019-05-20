@@ -27,6 +27,7 @@ navButton.addEventListener("click", openMenu, false);
 
 
 win.addEventListener("click", closeMenu, false);
+
     
 })
 

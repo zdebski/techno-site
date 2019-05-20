@@ -1,6 +1,7 @@
 
 .navigation-wrapper {
   position: relative;
+  z-index: 5;
 }
 .navigation-button {
   will-change: transform;
@@ -36,7 +37,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 40%;
   background: #fff;
   height: 100%;
   transform: skewX(0deg) translate(100%,0);

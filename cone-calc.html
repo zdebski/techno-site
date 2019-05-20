@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/cone-calc.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/cone-calc.js"></script>
+
+
+    <title>Volume of Cone</title>
+
+</head>
+
+<body>
+    
+    
+      <div class="navigation-wrapper">
+    <div class="navigation-button">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="navigation-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="cone-calc.html">TECHNO CONE</a></li>
+          <li><a href="E:\Program Files\Xammp\htdocs\room-air-volume">TECHNO HEATERS</a></li>
+          <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+    
+
+    <!-- Material form subscription -->
+    <div class="card blue-grey lighten-5">
+        
+        
+        <img src="https://www.residentadvisor.net/images/events/flyer/2017/11/de-1118-1031175-1035222-front.jpg" title="Techno Cone" alt="Card image cap">
+        
+
+        <div class="card-body text-center">
+
+            <h3 class="indigo-text mt-4"><strong>Calculate your Techno Cone!</strong></h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-center my-4 pt-3">
+                            <form class="range-field w-75">
+                                <div id="value_style" class="value_radius">5 cm</div>
+                                <input id="slider_radius" class="border-0" type="range" value="5" min="0" max="100" />
+                                <div class="under_section">Radius</div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-center my-4 pt-3">
+                            <form class="range-field w-75">
+                                <div id="value_style" class="value_height">10 cm</div>
+                                <input id="slider_height" class="border-0" type="range" value="10" min="0" max="100" />
+                                <div class="under_section">Height</div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-lg" id="coneValues">Calculate</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-center my-4 pt-3">
+                            <form class="range-field w-75">
+                                  <div id="volumeOfCone"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-center my-4 pt-3">
+                            <form class="range-field w-75">
+                                  <div id="surfaceArea"></div>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
