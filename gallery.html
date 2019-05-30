@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     
 <link rel="stylesheet" type="text/css" href="css/gallery.css">
 <link rel="stylesheet" type="text/css" href="css/menu.css">
@@ -19,7 +20,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     
-<script type="text/javascript" src="script/script.js"></script>
+<script src="script/script.js"></script>
 
    
     <title>Gallery</title>
@@ -28,37 +29,56 @@
 
 <body>
     
-    <div class="navigation-wrapper">
+     <nav class="navbar navigation-wrapper">
     <div class="navigation-button">
       <i class="fa fa-bars"></i>
     </div>
     <div class="navigation-menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="cone-calc.html">TECHNO CONE</a></li>
-          <li><a href="http://127.0.0.1/room-air-volume.html">TECHNO HEATERS</a></li>
-          <li><a href="#">CONTACT</a></li>
+        <ul class="list-group">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">GALLERY</a></li>
+          <li class="nav-item"><a class="nav-link" href="cone-calc.html">TECHNO CONE</a></li>
+          <li class="nav-item"><a class="nav-link" href="room-air-volume.html">TECHNO HEATERS</a></li>
+          <li class="nav-item"><a class="nav-link" href="crew.html">CREW</a></li>
       </ul>
     </div>
-  </div>
+  </nav>
     
-    <div class="heading">
+<div class="container">
+    <div class="row heading">
         <h3>Gallery</h3>
     </div>
-    <div class="container">
-  <!--Carousel Wrapper-->
-    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+        
+     <!--Carousel Wrapper-->
+<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="/img/i-hate-models.jpg" alt="First slide">
+            <img class="d-block w-100" src="/img/charlotte-de-witte.jpg" alt="Charlotte de Witte">
+            <div class="carousel-caption mb-5">
+                <h1><strong>Charlotte de Witte</strong></h1>
+                <p>When she is behind decks, crowd doesn't need any drugs.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="/img/charlotte-de-witte.jpg" alt="Second slide">
+            <img class="d-block w-100" src="/img/amelie.jpg" alt="Amelie Lens">
+            <div class="carousel-caption mb-5">
+                <h1><strong>Amelie Lens</strong></h1>
+                <p>She will blow your mind with her acid bangers.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="/img/maceo-plex.jpg" alt="Third slide">
+            <img class="d-block w-100" src="/img/maceo-plex.jpg" alt="Nina Kravitz">
+            <div class="carousel-caption mb-5">
+                <h1><strong>Nina Kravitz</strong></h1>
+                <p>Her majesty the Queen of Techno.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
         </div>
     </div>
     <!--/.Slides-->
@@ -73,13 +93,14 @@
     </a>
     <!--/.Controls-->
     <ol class="carousel-indicators">
-        <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100" src="/img/i-hate-models.jpg" class="img-fluid"></li>
-        <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100" src="/img/charlotte-de-witte.jpg" class="img-fluid"></li>
-        <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100" src="/img/maceo-plex.jpg" class="img-fluid"></li>
+        <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100 img-fluid" src="/img/charlotte-de-witte.jpg" alt="thumbnail charlotte de witte"></li>
+        <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100 img-fluid" src="/img/amelie.jpg" alt="thumbnail amelie lens"></li>
+        <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100 img-fluid" src="/img/maceo-plex.jpg" alt="thumbnail nina kravitz"></li>
     </ol>
 </div>
-<!--/.Carousel Wrapper-->
- </div>                       
+</div>
+
+                        
     
 </body>
 </html>

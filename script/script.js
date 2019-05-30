@@ -6,8 +6,10 @@ var navButton = document.querySelector(".navigation-button");
 var navMenu = document.querySelector(".navigation-menu");
 var win = window;
 
+var el = document.getElementsByClassName('carousel-control-next');
+
+
 function openMenu(event) {
-    console.log("Dupa");
   navButton.classList.toggle("active");
   navMenu.classList.toggle("active");
 

@@ -7,10 +7,10 @@ $(".submit").click(function(){
     var lenght = $("#slider_lenght").val();
     
     $.post(
-    "https://technoisagirl.000webhostapp.com/room-air.php",
+    "script/room-air.php",
         {postWidth: width, postHeight: height, postLenght: lenght},
         function(response){
-            console.log("Dupa");
+            console.log("Test");
             $('#hello').html(response);
         }
     

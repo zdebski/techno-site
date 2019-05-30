@@ -71,6 +71,9 @@
     color: #f20c4a;
 }
 
+.nav-link.active{
+    color: #f20c4a;
+}
 
 .navigation-menu.active {
   transform: skewX(8deg) translate(0,0);

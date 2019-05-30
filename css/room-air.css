@@ -1,12 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:700);
 body {
   font-family: "Dosis", Helvetica, Arial, sans-serif; 
-  background: #ecf0f1;
+  background: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.95), 
+        rgba(114, 114, 114, 0.46)),
+         
+      url(../img/gesaffelstein.jpg);
   color: #34495e;
   text-shadow: white 1px 1px 1px;
+  height: 100vh;
 }
-#value_style {
-  border-bottom: 4px dashed #bdc3c7;
+
+
+
+.value_radius, .value_height, .value_lenght {
+  border-bottom: 4px dashed #0d1419;
   text-align: center;
   font-weight: bold;
   font-size: 5em;
@@ -21,7 +30,7 @@ body {
 input[type="range"] {
   display: block;
   -webkit-appearance: none;
-  background-color: #bdc3c7;
+  background-color: #656565;
   width: 300px;
   height: 5px;
   border-radius: 5px;
@@ -34,7 +43,6 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #e74c3c;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   border: 2px solid white;
   cursor: pointer;
   transition: .3s ease-in-out;
@@ -48,14 +56,26 @@ input[type="range"]::-webkit-slider-thumb {
     transform: scale(1.6);
   }
 
+.indigo-text{
+    font-size: 3em;
+    font-family: impact;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 4px;
+}
+
+
+
 .under_section{
-    margin-top: 30px;
+    margin-top: 15px;
     font-size: 1.5em;
-    letter-spacing: 0.7em;
 }
 
 button{
+    margin-top: 30px;
     background-color: black;
+    width: 300px;
     color: white;
 }
 
@@ -65,20 +85,8 @@ button:hover{
 box-shadow: -1px 2px 28px 2px rgba(0,0,0,0.75);
 }
 
-#volumeOfCone{
+#hello{
+    position: relative;
+    margin-top: 3vh;
     font-size: 2em;
-    background: #e74c3c;
-   border-radius: 200px 0px 200px 0px;
-    -moz-border-radius: 200px 0px 200px 0px;
-    -webkit-border-radius: 200px 0px 200px 0px;
-    border: 0px solid #000000;
-}
-
-#surfaceArea{
-    font-size: 2em;
-    background: #e74c3c;
-   border-radius: 200px 0px 200px 0px;
-    -moz-border-radius: 200px 0px 200px 0px;
-    -webkit-border-radius: 200px 0px 200px 0px;
-    border: 0px solid #000000;
 }

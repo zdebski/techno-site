@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     
     <meta charset="UTF-8">
@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/room-air.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <script src="script/script.js"></script>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -17,7 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <script type="text/javascript" src="/script/room-airJS.js"></script>
+    <script src="script/room-airJS.js"></script>
 
 
 
@@ -26,25 +31,43 @@
     
 </head>
 <body>
-
+    
+     <nav class="navbar navigation-wrapper">
+    <div class="navigation-button">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="navigation-menu">
+        <ul class="list-group">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+          <li class="nav-item"><a class="nav-link" href="cone-calc.html">TECHNO CONE</a></li>
+          <li class="nav-item"><a class="nav-link active" href="room-air-volume.html">TECHNO HEATERS</a></li>
+          <li class="nav-item"><a class="nav-link" href="crew.html">CREW</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+    <div class="container">
     <div class="card-body text-center">
 
-            <h3 class="indigo-text mt-4"><strong>Calculate your Techno Cone!</strong></h3>
+            <h3 class="indigo-text mt-4"><strong>Calculate numbers of heaters in your <span style="color: #f20c4a">TECHNO ROOM</span></strong></h3>
+            <p class="mt-4"><strong>Based on width, height and lenght of room</strong></p>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="d-flex justify-content-center my-4 pt-3">
                             <form class="range-field w-75">
-                                <div id="value_style" class="value_radius">5 cm</div>
+                                <div class="value_radius">5 cm</div>
                                 <input id="slider_width" class="border-0" type="range" value="5" min="0" max="100" />
                                 <div class="under_section">Width</div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="d-flex justify-content-center my-4 pt-3">
                             <form class="range-field w-75">
-                                <div id="value_style" class="value_height">10 cm</div>
+                                <div class="value_height">10 cm</div>
                                 <input id="slider_height" class="border-0" type="range" value="10" min="0" max="100" />
                                 <div class="under_section">Height</div>
 
@@ -52,10 +75,10 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="d-flex justify-content-center my-4 pt-3">
                             <form class="range-field w-75">
-                                <div id="value_style" class="value_lenght">10 cm</div>
+                                <div class="value_lenght">10 cm</div>
                                 <input id="slider_lenght" class="border-0" type="range" value="10" min="0" max="100" />
                                 <div class="under_section">Lenght</div>
 
@@ -65,12 +88,12 @@
                     
                 </div>
             </div>
-              <button class="submit">Submit</button>
+            <button type="button" class="submit btn btn-lg" id="coneValues">Calculate</button>
 
-
+            
             <div id="hello"></div>
 
         </div>
-
+</div>
 </body>
 </html>

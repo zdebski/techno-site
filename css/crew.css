@@ -1,0 +1,115 @@
+body{
+    background: 
+      linear-gradient(
+        rgba(159, 159, 159, 0.76), 
+        rgba(159, 159, 159, 0.76)),
+         
+      url(../img/gallery-back.jpg);
+     background-size: cover;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: bold;
+     height: auto;
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+.facebook{
+    color: #4267b2;
+}
+
+.twitter{
+    color: #1DA1F2;
+}
+
+.soundcloud{
+    color: #FF5500;
+}
+
+.cardBackground{
+    background-color: #111626;
+}
+
+.cardBackgroundDarker{
+    background-color: #0a0d17;
+    color: white;
+}
+
+.h2, .under-h2, .cardBackgroundDarker{
+    font-family: 'Abel', sans-serif;
+}
+
+button{
+    background-color: #f20c4a;
+}
+
+.detailsButton{
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.detailsButton[aria-expanded="true"]{
+        overflow: hidden;
+        left: 90%;
+        top: 22vh;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+    }
+
+
+.detailsButtonSmall{
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.detailsButtonSmall[aria-expanded="true"]{
+        overflow: hidden;
+        left: 90%;
+        top: 12vh;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+    }
+
+
+.mIconS{
+    display: inline-flex;
+    height: 2em;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #FF5500;
+}
+
+.mIconF{
+    display: inline-flex;
+    height: 2em;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #4267b2;
+}
+
+.mIconT{
+    display: inline-flex;
+    height: 2em;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #1DA1F2;
+}

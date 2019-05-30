@@ -1,11 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:700);
 body {
   font-family: "Dosis", Helvetica, Arial, sans-serif; 
-  background: #ecf0f1;
+  background: 
+      linear-gradient(
+        rgba(180, 175, 175, 0.95), 
+        rgba(114, 114, 114, 0.46)),
+         
+      url(../img/adam-beyer.jpg);
   color: #34495e;
   text-shadow: white 1px 1px 1px;
+  height: 100vh;
 }
-#value_style {
+
+.value_radius, .value_height {
   border-bottom: 4px dashed #bdc3c7;
   text-align: center;
   font-weight: bold;
@@ -21,7 +28,7 @@ body {
 input[type="range"] {
   display: block;
   -webkit-appearance: none;
-  background-color: #bdc3c7;
+  background-color: #000000;
   width: 300px;
   height: 5px;
   border-radius: 5px;
@@ -47,6 +54,15 @@ input[type="range"]::-webkit-slider-thumb {
   input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.6);
   }
+
+.indigo-text{
+    font-size: 3em;
+    font-family: impact;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 4px;
+}
 
 .under_section{
     margin-top: 30px;
@@ -83,16 +99,8 @@ box-shadow: -1px 2px 28px 2px rgba(0,0,0,0.75);
     border: 0px solid #000000;
 }
 
-figure {
-  position: relative
-}
-figcaption {
-  position: absolute;
-  width: 200px;
-  line-height: 150px;
-  text-align: center;
-  left: 0;
-  top: 0;
-  text-shadow: 0 0 1px white;
-  font-weight:bold;
+img{
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
 }

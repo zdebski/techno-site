@@ -3,7 +3,7 @@
      background-size: cover;
      font-family: 'Roboto Condensed', sans-serif;
      font-weight: bold;
-     height: 100vh;
+     height: auto;
 }
 
 .container {
@@ -46,7 +46,7 @@
 }
  
 
-.navigation-menu ul li {
+.navigation-menu, ul li {
   list-style: none;
   font-family: impact;
   color: hsl(0,0%,70%);
@@ -66,7 +66,7 @@
   transform-origin: top right;
   transition: all .2s ease-in;
 }
-.navigation-menu ul {
+.navigation-menu ul  {
   transform: skewX(-8deg);
   transform-origin: top left;
   position: fixed;
@@ -90,6 +90,10 @@
 }
 
 .navigation-menu ul li a:hover{
+    color: #f20c4a;
+}
+
+.nav-link.active{
     color: #f20c4a;
 }
 

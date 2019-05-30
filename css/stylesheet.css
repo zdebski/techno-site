@@ -1,0 +1,13 @@
+﻿/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+
+@font-face {
+    
+    font-family:"Pastor of Muppets Flipped";
+    src: url("../fonts/PASTORFL.eot"); /* EOT file for IE */
+    src: url("PASTORFL.ttf"); /* TTF file for CSS3 browsers */
+    src: url("PASTORFL.woff"); /* TTF file for CSS3 browsers */
+    src: local("PASTORFL"), url('../fonts/PASTORFL.ttf');  
+    font-weight:normal;
+    font-style:normal;
+
+}
